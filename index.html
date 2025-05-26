@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Practice Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Practice Helper</h1>
+        
+        <!-- Select Math Type -->
+        <label for="mathType">Choose math type:</label>
+        <select id="mathType">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+        
+        <!-- Select Difficulty -->
+        <label for="difficulty">Select difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        
+        <!-- Button to Generate Problem -->
+        <button onclick="generateProblem()">Generate Problem</button>
+        
+        <div id="problem"></div>
+        
+        <!-- User Input for Answer -->
+        <input type="number" id="userAnswer" placeholder="Your Answer">
+        
+        <!-- Submit Answer Button -->
+        <button onclick="checkAnswer()">Submit Answer</button>
+        
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
